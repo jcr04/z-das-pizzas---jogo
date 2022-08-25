@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <script type="module" src="modules/game.js"></script>
+    <template id="game-over-template">
+        <div class="game-overlay">
+            <h2>Parabens</h2>
+            <p>voce conseguiu</p>
+            <h2>LEVEL <span id=lnum></span></h2>
+            <button>restart</button> 
+        </div>
+    </template>
+    <template id="title-template">
+        <div class="game-overlay">
+            <h2>zé da pizza</h2>
+            <p>Nesse jogo voce tem que pegar as pizzas e trazer <em>de volta</em> para pizzaria!</p>
+            <p>Drive with the dirija<em>teclas de flechas</em> ou <em>WASD</em> keys.</p>
+            <h2>LEVEL: <input type="number" value=1 name="level" min="1" max="15"></h2>
+            <p><button>Gerar mapa</button></p>
+            <p><button><b>vai</b></button></p>
+        </div>
+    </template>
+</head>
+<body>
+    <main>
+        <canvas width="192" height="108" class="game"></canvas>
+    </main>
+</body>
+<footer>
+    <p></p>
+</footer>
